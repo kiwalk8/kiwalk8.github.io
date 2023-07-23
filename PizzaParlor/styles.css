@@ -1,0 +1,81 @@
+/* Kimmy Walker
+CIS 130
+July 4, 2023 */
+
+body {
+    margin: auto;
+    background-color: #ff5195;
+}
+
+header {
+    background-color: #ff5195;
+    justify-content: center;
+    display: flex;
+}
+
+nav {
+    color: white;
+    font-family: 'Gagalin', sans-serif;
+    font-size: 18pt;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+nav>a {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: 'Gagalin', sans-serif;
+    font-size: 24px;
+    margin: 0px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+a:link {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:visited {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+div {
+    background-color: white;
+    padding: 15px;
+}
+
+input,
+select {
+    display: block;
+    margin: 10px;
+    width: 230px;
+    height: 25px;
+}
+
+p {
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

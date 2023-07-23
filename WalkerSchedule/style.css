@@ -1,0 +1,66 @@
+/* Author: Kimmy Walker Assignment: Scheulde Lab
+Date: June 25, 2023*/
+
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(125, 155, 190));
+    background-attachment: fixed;
+}
+
+table {
+    border-style: solid;
+    border-color: rgb(125, 155, 190);
+    border-width: 2px;
+    background-color: rgb(215, 215, 215);
+    margin: auto;
+    margin-top: 30px;
+    width: 75%;
+    font-family: 'Belanosima', sans-serif;
+    border-collapse: collapse;
+}
+
+td {
+    border-style: solid;
+    border-color: rgba(125, 155, 190);
+    border-width: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+th {
+    background-color: rgb(125, 155, 190);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.time {
+    background-color: rgb(125, 155, 190);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    width: 60px;
+}
+
+tr {
+    height: 60px;
+}
+
+#title {
+    background-color: rgb(125, 155, 190);
+    vertical-align: bottom;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(215, 215, 215);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}

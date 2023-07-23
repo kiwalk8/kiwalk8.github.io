@@ -1,0 +1,48 @@
+/* Kimmy Walker
+CIS 130
+July 4, 2023 */
+
+#ordercolumns {
+    display: flex;
+}
+
+#ordercolumn1 {
+    flex: 1 2 150px;
+}
+
+#ordercolumn2 {
+    flex: 2 1 300px;
+}
+
+#pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pizzacontainers {
+    width: 350px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 568px) {
+    #pizzas {
+        display: block;
+    }
+
+    #ordercolumns {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}

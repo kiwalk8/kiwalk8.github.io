@@ -1,0 +1,217 @@
+/* Kimmy Walker, CIS 130, July 16, 2023*/
+
+/* GENERAL PAGE STYLES */
+body {
+    background-color: #9dc7ce;
+    margin: 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+nav ul {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px;
+}
+
+nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 30px;
+    background-color: #dfe6ef;
+    list-style: none;
+    box-shadow: 0 1px 5px rgba(83, 84, 90, 0.8);
+    font-weight: bold;
+}
+
+a {
+    color: #6d858a;
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: #6d858a;
+}
+
+a:hover {
+    color: black;
+}
+
+.welcome {
+    background-color: #dfe6ef;
+    padding-top: 30px;
+    display: grid;
+    grid-gap: 20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+
+.welcome div {
+    margin: auto;
+}
+
+.services {
+    background-color: #dfe6ef;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    font-size: 36pt;
+}
+
+h1,
+h2 {
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    font-size: 22pt;
+    text-transform: uppercase;
+}
+
+div {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #dfe6ef;
+    background-color: black;
+}
+
+/* index styles */
+
+.services p {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-around;
+}
+
+.products div {
+    width: 200px;
+}
+
+
+img {
+    max-width: 100%;
+    box-shadow: 0 1px 5px rgba(83, 84, 90, 0.8);
+}
+
+.video {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+}
+
+
+/* tables on bait shop page */
+
+.tables {
+    background-color: #dfe6ef;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+td {
+    width: auto;
+    padding: 5px 20px 5px 20px;
+    vertical-align: center;
+    border: .5pt;
+    border-style: solid;
+}
+
+.subheadtable {
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+th {
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    font-size: 24pt;
+}
+
+.tables {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* contact */
+
+.contactcontainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.contactcontainer {
+    display: flex;
+    background-color: #dfe6ef;
+}
+
+#contactinfo {
+    flex: 1 3 100px;
+}
+
+#contactus {
+    flex: 3 1 800px;
+}
+
+
+
+
+/* responsive-ness */
+@media screen and (max-width: 1100px) {
+    .tables {
+        grid-template-columns: 2fr;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .welcome {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    .contactcontainer {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+}
