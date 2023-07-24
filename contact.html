@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimmy Walker Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Style+Script&display=swap" rel="stylesheet">
+    <!-- Kimmy Walker, CIS 130, Final Project, July 23, 2023 -->
+</head>
+
+
+<body>
+    <header>
+        <h1>KIMMY WALKER WEB DEVELOPMENT</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="projects.html">PROJECTS</a>
+            </li>
+            <li>
+                <a href="resume.html">RESUMÉ</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="contactcontainer">
+
+
+    <div class="mycontactinfo">
+        <p> Kimmy Walker </p>
+        <a href="mailto:KimmyNWalker@gmail.com">Email Me</a>
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/kimmywalker/">Linked In Profile</a>
+        </p>
+    </div>
+
+    <div class="contactform">
+        <form method="get" action="thankyou3.html">
+            <div id="formdiv">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname" class="label">Full Name:</label>
+                    <input type="text" name="fname" id="fname" class="coninfo" required>
+                    <label for="email" class="label">Email:</label>
+                    <input type="email" id="email" class="coninfo">
+                    <label for="phone" class="label">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" class="coninfo">
+                    <label for="reach" class="label">Reason for Contact</label>
+                    <select id="reach" name="reach">
+                        <option value="email">Professional opportunities</option>
+                        <option value="phone">Question about my work</option>
+                        <option value="phone">Just to say hello</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Leave a Note
+                    </legend>
+                    <textarea id="adtlinfo" name="adtlinfo" rows="5" cols="30"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+    <footer>Kimmy Walker Web Development &copy;2023 | <a href="mailto:KimmyNWalker@gmail.com">KimmyNWalker@gmail.com</a>
+    </footer>
+</body>
+
+</html>
