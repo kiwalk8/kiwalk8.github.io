@@ -1,10 +1,13 @@
 /* Kimmy Walker, CIS 130 Final Project, July 23, 2023 */
+
 /* ALL PAGES, MAIN STYLING */
+/* flip colors - white/light background with dark nav and boxes around resume */
 body {
     font-family: 'Red Hat Text', sans-serif;
-    color: #ffffff;
-    background-color: #292f36;
+    color: #292f36;
+    background-color: #ffffff;
     margin: 0px;
+    padding: 20px;
 }
 
 header {
@@ -12,6 +15,7 @@ header {
     text-align: center;
     padding: 1px;
     color: #4ecdc4;
+    box-shadow: 0 1px 5px rgba(176, 178, 189, 0.8)
 }
 
 header h1 {
@@ -30,10 +34,16 @@ nav {
     background-color: #ffffff;
     padding: 1px;
     box-shadow: 0 1px 5px rgba(176, 178, 189, 0.8);
+    text-align: center;
 }
 
-nav a, footer a {
+nav a,
+footer a {
     text-decoration: none;
+}
+
+nav ul {
+    padding-left: 0px;
 }
 
 nav ul {
@@ -42,59 +52,99 @@ nav ul {
     list-style-type: none;
 }
 
-nav a, footer a {
+nav a,
+footer a {
     color: #4ecdc4;
 }
 
-nav a:visited, footer a:visited{
+nav a:visited,
+footer a:visited {
     color: #ff6b6b;
 }
 
-nav a:hover, footer a:hover {
+nav a:hover,
+footer a:hover {
     color: #39342F;
 }
 
 footer {
     text-align: center;
-    background-color: #ffffff;
-    color: #ff6b6b;
+    background-color: #292f36;
+    color: #ffffff;
     margin-top: 50px;
+    box-shadow: 0 1px 5px rgba(176, 178, 189, 0.8);
 }
 
 /* FLEX OF FIRST PAGE */
+.indexcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    grid-gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
 
+#helloimg {
+    width: 300px;
+}
 
 
 /* PROJECTS */
-td {
+.projects {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 80%;
+    margin: auto;
+}
+
+.indvproj {
+    padding: 20px;
+}
+
+h5 {
     text-align: center;
-    margin: 90%;
-    padding: 30px;
 }
 
 img {
     box-shadow: 0 1px 5px rgba(205, 206, 214, 0.8);
 }
 
+h5 {
+    color: #4ecdc4;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
 
 /* RESUME */
+
 .resumediv {
     display: grid;
-    grid-template-columns: 2fr 2fr;
     margin: 30px;
     font-size: .9rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.experience {
+    grid-template-columns: 2fr;
 }
 
 .resumediv div {
     margin: 10px;
-    border: #ff6b6b;
+    border: #4ecdc4;
     border-style: solid;
     border-width: 1px;
+    padding: 10px;
 }
 
 .resumediv h3 {
     text-align: center;
-    text-shadow: 1px 1px 5px #ff6b6b;
+    text-shadow: 1px 1px 1px #ff6b6b;
 }
 
 h4 {
@@ -105,18 +155,32 @@ h4 {
 /* CONTACT */
 .contactcontainer {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform {
+    background-color: #292f36;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 input {
     display: block;
+    margin: 5px;
 }
 
 .mycontactinfo {
-    display: block;
     text-align: center;
+    height: 100px;
+    padding-bottom: 40px;
 }
+
 
 .mycontactinfo a {
     margin: 10px;
@@ -125,7 +189,43 @@ input {
 }
 
 .mycontactinfo a:hover {
-    color: white;
+    color: #ff6b6b;
+}
+
+.mycontactinfo img {
+    width: 100px;
+    box-shadow: none;
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .resumediv {
+        display: block;
+    }
+
+    .indexcontainer {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .contactcontainer {
+        display: block;
+        margin: auto;
+    }
+
+    .mycontactinfo {
+        margin: auto;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+
+}
