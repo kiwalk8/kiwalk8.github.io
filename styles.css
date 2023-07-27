@@ -1,7 +1,6 @@
 /* Kimmy Walker, CIS 130 Final Project, July 23, 2023 */
 
 /* ALL PAGES, MAIN STYLING */
-/* flip colors - white/light background with dark nav and boxes around resume */
 body {
     font-family: 'Red Hat Text', sans-serif;
     color: #292f36;
@@ -59,12 +58,12 @@ footer a {
 
 nav a:visited,
 footer a:visited {
-    color: #ff6b6b;
+    color: #4ecdc4;
 }
 
 nav a:hover,
 footer a:hover {
-    color: #39342F;
+    color: #ff6b6b;
 }
 
 footer {
@@ -131,7 +130,8 @@ h5 {
 }
 
 .experience {
-    grid-template-columns: 2fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .resumediv div {
@@ -157,10 +157,9 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 20px;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
 }
 
 .contactform {
